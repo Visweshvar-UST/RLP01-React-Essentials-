@@ -1,3 +1,6 @@
+import ReactImg from './assets/react-core-concepts.png'
+
+
 const ReactContent = ["Fundamantal","Crucial","Core"]
 function generateInd(max) {
   return Math.floor(Math.random() * (max+1));
@@ -6,7 +9,7 @@ function generateInd(max) {
 function Header() {
   return (<div>
     <header>
-      <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+      <img src={ReactImg} alt="Stylized atom" />
       <h1>React Essentials</h1>
       <p>
         {ReactContent[generateInd(2)]} React concepts you will need for almost any app you are
